@@ -5,6 +5,8 @@ from app.input.pdf_handler import pdf_to_image
 from app.input.video_handler import video_to_frames
 
 def process_file(file):
+    print("Processing file:", file.filename)
+    
     file.stream.seek(0)
     filename = file.filename.lower()
 
